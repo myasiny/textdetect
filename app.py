@@ -14,3 +14,6 @@ if __name__ == "__main__":
 
     pages = ocr.pdf_to_jpg(pdf_name="test-5.pdf", pdf_path="data/")
     ocr.img_to_text(img_path="data/{}".format(pages[0]), process="blur")
+
+    ocr_frame.credit_card_to_text(img_path="data/test-3.png", frame_path="data/template-1.png")
+    ocr_frame.credit_card_to_text(img_path="data/test-4.png", frame_path="data/template-1.png")
