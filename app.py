@@ -17,3 +17,6 @@ if __name__ == "__main__":
 
     ocr_frame.credit_card_to_text(img_path="data/test-3.png", frame_path="data/template-1.png")
     ocr_frame.credit_card_to_text(img_path="data/test-4.png", frame_path="data/template-1.png")
+
+    ocr_text_detect.detection_to_text(img_path="data/test-6.png", model_path="data/model-1.pb")
+    ocr_text_detect.detection_to_text(img_path="data/test-7.png", model_path="data/model-1.pb")
