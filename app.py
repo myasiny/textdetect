@@ -4,6 +4,7 @@
 from funcs import ocr
 from funcs import ocr_frame
 from funcs import ocr_text_detect
+from funcs import ocr_object
 
 __credits__ = ["Adrian Rosebrock"]
 
@@ -20,3 +21,7 @@ if __name__ == "__main__":
 
     ocr_text_detect.detection_to_text(img_path="data/test-6.png", model_path="data/model-1.pb")
     ocr_text_detect.detection_to_text(img_path="data/test-7.png", model_path="data/model-1.pb")
+
+    ocr_object.train_mlp(train_path=["data/money/1kr/", "data/money/5kr/", "data/money/10kr/",
+                                     "data/money/25kr/", "data/money/50kr/", "data/money/1tl/"], model_path="data/")
+    ocr_object.money_to_text(img_path="data/test-8.png", model_path="data/model-2.pkl")
